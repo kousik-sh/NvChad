@@ -11,6 +11,7 @@ return {
   },
   view = {
     width = 30,
+    side = 'right',
     preserve_window_proportions = true,
   },
   renderer = {
@@ -19,15 +20,25 @@ return {
     indent_markers = { enable = true },
     icons = {
       glyphs = {
-        default = "󰈚",
-        folder = {
-          default = "",
-          empty = "",
-          empty_open = "",
-          open = "",
-          symlink = "",
-        },
-        git = { unmerged = "" },
+	      git= {
+		       unstaged= "",
+		       staged= "✓",
+		       unmerged= "",
+		       renamed= "➜",
+		       untracked= "★",
+		       deleted= "",
+		       ignored= "◌"
+	       },
+	       folder= {
+		       arrow_open= "",
+		       arrow_closed= "",
+		       default= "",
+		       open= "",
+		       empty= "",
+		       empty_open= "",
+		       symlink= "",
+		       symlink_open= "",
+	       },
       },
     },
   },
